@@ -29,7 +29,7 @@
                 "2"
             ],
             "defaultValue": "0"
-        },        
+        },
         "repoUrl": {
             "type": "string"
         },
@@ -40,7 +40,7 @@
     "resources": [{
         "apiVersion": "2015-04-01",
         "name": "[parameters('hostingPlanName')]",
-        "type": "Microsoft.Web/serverFarms",
+        "type": "Microsoft.DomainRegistration/domains",
         "location": "[parameters('siteLocation')]",
         "properties": {
             "sku": "[parameters('sku')]",
@@ -50,7 +50,7 @@
     }, {
         "apiVersion": "2015-08-01",
         "name": "[parameters('siteName')]",
-        "type": "Microsoft.Web/Sites",
+        "type": "Microsoft.ServiceBus/namespaces",
         "location": "[parameters('siteLocation')]",
         "dependsOn": [
             "[resourceId('Microsoft.Web/serverfarms', parameters('hostingPlanName'))]"
@@ -61,26 +61,21 @@
         "properties": {
             "serverFarmId": "[parameters('hostingPlanName')]",
             "siteConfig": {
-              "appSettings": []
+                "appSettings": []
             },
-        
-Error: Parse error on line 65:
-...         },        },        "resource
-----------------------^
-Expecting 'STRING'
-},
-        "resources": [{
-            "apiVersion": "2015-08-01",
-            "name": "web",
-            "type": "sourcecontrols",
-            "dependsOn": [
-                "[resourceId('Microsoft.Web/Sites', parameters('siteName'))]"
-            ],
-            "properties": {
-                "RepoUrl": "[parameters('repoUrl')]",
-                "branch": "[parameters('branch')]",
-                "IsManualIntegration": true
-            }
-        }]
+            "resources": [{
+                "apiVersion": "2015-08-01",
+                "name": "web",
+                "type": "sourcecontrols",
+                "dependsOn": [
+                    "[resourceId('Microsoft.Web/Sites', parameters('siteName'))]"
+                ],
+                "properties": {
+                    "RepoUrl": "[parameters('repoUrl')]",
+                    "branch": "[parameters('branch')]",
+                    "IsManualIntegration": true
+                }
+            }]
+        }
     }]
 }
