@@ -1,12 +1,19 @@
 {
   "name": "graham-mcallister-net",
   "version": "1.0.0",
+  "description": "Node.JS version of softwarepilgrim site",
   "private": true,
   "scripts": {
     "start": "node server"
-  },  
-"license": "Apache",
-"engines": {
+  },
+  "author": "Graham",
+  "license": "Apache",
+  "engines": {
     "node": "~0.10.0 || ~4.2.0"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "mustache-express": "^1.2.7",
+    "npm": "^6.2.0"
   }
 }
