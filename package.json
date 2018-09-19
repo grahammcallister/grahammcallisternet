@@ -4,7 +4,8 @@
   "description": "Node.JS version of softwarepilgrim site",
   "private": true,
   "scripts": {
-    "start": "node server"
+    "start": "node server",
+    "dev": "nodemon server.js"
   },
   "author": "Graham",
   "license": "Apache",
@@ -15,5 +16,8 @@
     "express": "^4.16.3",
     "mustache-express": "^1.2.7",
     "npm": "^6.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
   }
 }
