@@ -10,6 +10,10 @@ router.get('/GreatDeveloper', function (req, res) {
     res.render('greatdeveloper', { title: 'The Software Pilgrim - Great Developer'});
 })
 
+router.get('/PilgrimResources', function (req, res) {
+    res.render('developerresources', { title: 'The Software Pilgrim - Great Developer Resources'});
+})
+
 var app = express();
 app.use(express.static('public'));
 app.engine('html', mustacheExpress());
