@@ -12,6 +12,14 @@
   "engines": {
     "node": "~0.10.0 || ~4.2.0"
   },
+  "nodemonConfig": {
+    "verbose": true,
+    "watch": [
+      "public/",
+      "views/",
+      "server.js"
+    ]
+  },
   "dependencies": {
     "express": "^4.17.1",
     "mustache-express": "^1.2.8",

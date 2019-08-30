@@ -14,6 +14,10 @@ router.get('/PilgrimResources', function (req, res) {
     res.render('developerresources', { title: 'The Software Pilgrim - Great Developer Resources'});
 })
 
+router.get('/BookmarkThis', function (req, res) {
+    res.render('bookmarkthis', { title: 'The Software Pilgrim - Bookmarks, links and lessons learned'});
+})
+
 var app = express();
 app.use(express.static('public'));
 app.engine('html', mustacheExpress());

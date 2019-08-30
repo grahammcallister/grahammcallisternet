@@ -1,0 +1,96 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link href="/css/fontawesome.min.css" rel="stylesheet">
+    <link href="/css/solid.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <script defer src="/js/solid.min.js"></script>
+    <script defer src="/js/fontawesome.min.js"></script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+</head>
+<body>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a href="/" class="navbar-brand">The Software Pilgrim</a>
+                    </div>
+                </div>
+        </div>
+                
+        <div class="container body-content">
+            <div class="row">&nbsp;</div>
+            <h2>Bookmarks, links, snippets, reminders and lessons learned</h2>
+            <hr/>
+            <div class="row">
+                <div class="col-lg-12"><small>Last updated: 30 August 2019</small></div>
+            </div>
+            <p>&nbsp;</p>
+<div class="row">
+    <div class="col-lg-12">
+        <p>
+            Here are some handy oddball nuggets of usefulness and remembrance, mostly for my own sake, but maybe worth sharing. On the <a href="/PilgrimResources">Resources for being a great developer</a> page you'll find a more formal collection of "long form" usefulness.
+        </p>
+
+        <p>&nbsp;</p>
+        <h3>PowerShell</h3>
+        <p>
+            &nbsp;
+        </p>
+        <ul>
+            <li>
+                    <h4>List all personal profile locations</h4>
+                    <p>
+                        Every so often I need to add or remove something from my PowerShell startup profile ($PROFILE), and for the life of me can never remember the syntax for listing them:
+                    </p>
+                    <p>
+                        <blockquote class="blockquote"><code>$PROFILE | Format-List * -Force</code></blockquote>
+                    </p>
+                    <p>Taken (this time) from this handy article <a href="https://devblogs.microsoft.com/scripting/understanding-the-six-powershell-profiles/">Undestanding the six PowerShell profiles</a> on Microsoft DevBlogs</p>
+                    <hr />
+            </li>
+            <li>Check out my miscelaneous PowerShell utilities repo <a href="https://github.com/grahammcallister/powershellutil">github.com/grahammcallister/powershellutil</a> for more.</li>
+        </ul>
+
+        <p>&nbsp;</p>
+        <h3>Tools</h3>
+        <p>
+            &nbsp;
+        </p>
+        <ul>
+            <li>
+                    <h4>Chocolatey</h4>
+                    <p>
+                        If you develop on Windows and don't know about Chocolatey, please go now and install it. It's like NPM, but for Windows applications. It's a time saver.
+                    </p>
+                    <p>Read about Chocolatey here: <a href="https://chocolatey.org/">Chocolatey.org</a></p>
+                    <hr />
+            </li>
+        </ul>
+
+    </div>
+</div>
+</driv>
+
+<hr />
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                        <p><small>&copy; 2019 The Software Pilgrim</small></p>
+                        </div>
+                        <div class="col-md-4">
+                        <a href="https://stackoverflow.com/users/45817/grahammc">
+                            <img src="https://stackoverflow.com/users/flair/45817.png?theme=clean" width="208" height="58" alt="Profile for GrahamMc at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="Profile for GrahamMc at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
+                        </a>
+                        </div>
+                        <div class="col-md-4">
+                            <p><a href="https://twitter.com/GrahamMcZa?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">@GrahamMcZa on Twitter</a></p>
+                            <p><small><a href="https://www.github.com/grahammcallister"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Github logo" width="30" height="30"> www.Github.com/grahammcallister</a></small></p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+</body>
+</html>
