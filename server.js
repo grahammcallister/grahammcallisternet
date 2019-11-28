@@ -18,6 +18,10 @@ router.get('/BookmarkThis', function (req, res) {
     res.render('bookmarkthis', { title: 'The Software Pilgrim - Bookmarks, links and lessons learned'});
 })
 
+router.get('/ThingsImThinkingAbout', function (req, res) {
+    res.render('thingsimthinkingabout', { title: 'The Software Pilgrim - Things I am thinking about'});
+})
+
 var app = express();
 app.use(express.static('public'));
 app.engine('html', mustacheExpress());
