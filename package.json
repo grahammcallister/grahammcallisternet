@@ -15,10 +15,11 @@
   "nodemonConfig": {
     "verbose": true,
     "watch": [
-      "public/",
-      "views/",
+      "public",
+      "views",
       "server.js"
-    ]
+    ],
+    "ext": "js,mjs,json,html,css"
   },
   "dependencies": {
     "express": "^4.17.1",
