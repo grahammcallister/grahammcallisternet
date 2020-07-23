@@ -24,7 +24,7 @@
             <h2>Bookmarks, links, snippets, reminders and lessons learned</h2>
             <hr/>
             <div class="row">
-                <div class="col-lg-12"><small>Last updated: 20 May 2020</small></div>
+                <div class="col-lg-12"><small>Last updated: 23 July 2020</small></div>
             </div>
             <p>&nbsp;</p>
 <div class="row">
@@ -48,6 +48,28 @@
                         <blockquote class="blockquote"><code>git push --delete origin [tag name]</code></blockquote>
                     </p>
                     <p>For a bonus, check out DevDocs - a useful tool (also available in offline mode if needed) when needing command references: <a href="https://devdocs.io/git/">Git on DevDocs</a></p>
+                    <hr />
+            </li>
+        </ul>
+
+        <p>&nbsp;</p>
+        <h3>NuGet Notes</h3>
+        <p>
+            &nbsp;
+        </p>
+        <ul>
+            <li>
+                    <h4>Re-install a package without updating</h4>
+                    <p>
+                        Sometimes needed after upgrading the .Net version of a project, or messing around with code sharing between solutions.
+                    </p>
+                    <p>
+                        Run from the Package Manager Console window in Visual Studio:<blockquote class="blockquote"><code>Update-Package -reinstall</code></blockquote>
+                    </p>
+                    <p>
+                        To reinstall only a single project, do:<blockquote class="blockquote"><code>Update-Package -reinstall -Project ProjectName</code></blockquote>
+                    </p>
+                    <p>See <a href="https://docs.microsoft.com/en-us/nuget/consume-packages/reinstalling-and-updating-packages">How to reinstall and update packages</a> on the Microsoft docs site.</p>
                     <hr />
             </li>
         </ul>
