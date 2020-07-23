@@ -153,6 +153,10 @@
 
                     </ul>
                 </p>
+                <p>
+                    What's that, you don't remember how to base 64 encode the authorization parameter?
+                    <blockquote class="blockquote"><code>$base64AuthInfo = [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes(("{0}:{1}" -f $username,$password)))</code></blockquote>
+                </p>
                 <p><a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/invoke-restmethod?view=powershell-7">Invoke-RestMethod documentation</a> on the Microsoft docs site.</p>
                 <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types">Common mime types</a> on the Mozilla developer network.</p>
                 <hr />
