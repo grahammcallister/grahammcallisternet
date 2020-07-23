@@ -114,7 +114,49 @@
                 </p>
                 <p><a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-childitem">See the Get-ChildItem documentation</a></p>
                 <hr />
-        </li>
+            </li>
+            <li>
+                <h4>Curl replacement using Invoke-RestMethod</h4>
+                <p>
+                    For when you need to quickly check the results of an endpoint without installing tools. Invoke-RestMethod is your friend.
+                </p>
+                <p>
+                    <blockquote class="blockquote"><code>Invoke-RestMethod -Method Get -Uri $uri -Headers @{Authorization = "Basic $base64AuthInfo"; "Content-Type" = "application/json"; "Accept" = "application/json"}</code></blockquote>
+                </p>
+                <p>
+                    You might want to remember some of the basic mime types:
+                    <ul>
+                        <li>
+                            <blockquote class="blockquote"><code>application/json</code></blockquote>
+                        </li>
+                        <li>
+                            <blockquote class="blockquote"><code>application/msword</code></blockquote>
+                        </li>
+                        <li>
+                            <blockquote class="blockquote"><code>application/octet-stream</code></blockquote>
+                        </li>
+                        <li>
+                            <blockquote class="blockquote"><code>application/pdf</code></blockquote>
+                        </li>
+                        <li>
+                            <blockquote class="blockquote"><code>application/octet-stream</code></blockquote>
+                        </li>
+                        <li>
+                            <blockquote class="blockquote"><code>application/vnd.ms-excel</code> (Gotcha!)</blockquote>
+                        </li>
+                        <li>
+                            <blockquote class="blockquote"><code>text/html</code></blockquote>
+                        </li>
+                        <li>
+                            <blockquote class="blockquote"><code>text/javascript</code></blockquote>
+                        </li>
+
+                    </ul>
+                </p>
+                <p><a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/invoke-restmethod?view=powershell-7">Invoke-RestMethod documentation</a> on the Microsoft docs site.</p>
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types">Common mime types</a> on the Mozilla developer network.</p>
+                <hr />
+            </li>
             <li>Check out my miscelaneous PowerShell utilities repo <a href="https://github.com/grahammcallister/powershellutil">github.com/grahammcallister/powershellutil</a> for more.</li>
         </ul>
 
