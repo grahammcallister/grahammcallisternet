@@ -24,7 +24,7 @@
             <h2>Bookmarks, links, snippets, reminders and lessons learned</h2>
             <hr/>
             <div class="row">
-                <div class="col-lg-12"><small>Last updated: 23 July 2020</small></div>
+                <div class="col-lg-12"><small>Last updated: 3 August 2020</small></div>
             </div>
             <p>&nbsp;</p>
 <div class="row">
@@ -159,6 +159,53 @@
                 </p>
                 <p><a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/invoke-restmethod?view=powershell-7">Invoke-RestMethod documentation</a> on the Microsoft docs site.</p>
                 <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types">Common mime types</a> on the Mozilla developer network.</p>
+                <hr />
+            </li>
+            <li>
+                <h4>See what version of .Net Framework is installed on a PC</h4>
+                <p>
+                    For .Net 4.5 onwards you can see the version of the framework installed this way:
+                </p>
+                <p>
+                    <blockquote class="blockquote"><code>Get-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full" -Name "Release" | Get-Member Release</code></blockquote>
+                </p>
+                <p><a href="https://docs.microsoft.com/en-us/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed">How to determine .Net framework version documentation</a></p>
+                <p>The value grows larger with each successive release, similar to these minimum values:</p>
+                <table>
+                    <tr>
+                    <td>.NET Framework version</td><td>Minimum value</td>
+                    </tr>
+                    <tr>
+                    <td>.NET Framework 4.5		</td><td>378389</td>
+                    </tr>
+                    <tr>
+                    <td>.NET Framework 4.5.1	</td><td>378675</td>
+                    </tr>
+                    <tr>
+                    <td>.NET Framework 4.5.2	</td><td>379893</td>
+                    </tr>
+                    <tr>
+                    <td>.NET Framework 4.6		</td><td>393295</td>
+                    </tr>
+                    <tr>
+                    <td>.NET Framework 4.6.1	</td><td>394254</td>
+                    </tr>
+                    <tr>
+                    <td>.NET Framework 4.6.2	</td><td>394802</td>
+                    </tr>
+                    <tr>
+                    <td>.NET Framework 4.7		</td><td>460798</td>
+                    </tr>
+                    <tr>
+                    <td>.NET Framework 4.7.1	</td><td>461308</td>
+                    </tr>
+                    <tr>
+                    <td>.NET Framework 4.7.2	</td><td>461808</td>
+                    </tr>
+                    <tr>
+                    <td>.NET Framework 4.8		</td><td>528040</td>
+                    </tr>
+                    </table>
                 <hr />
             </li>
             <li>Check out my miscelaneous PowerShell utilities repo <a href="https://github.com/grahammcallister/powershellutil">github.com/grahammcallister/powershellutil</a> for more.</li>
