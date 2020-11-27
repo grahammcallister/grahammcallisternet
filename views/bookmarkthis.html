@@ -24,7 +24,7 @@
             <h2>Bookmarks, links, snippets, reminders and lessons learned</h2>
             <hr/>
             <div class="row">
-                <div class="col-lg-12"><small>Last updated: 22 August 2020</small></div>
+                <div class="col-lg-12"><small>Last updated: 27 November 2020</small></div>
             </div>
             <p>&nbsp;</p>
 <div class="row">
@@ -61,6 +61,17 @@
                 <p>Taken from here: <a href="https://stackoverflow.com/questions/22575662/filename-too-long-in-git-for-windows">Filename too long in Git for Windows</a></p>
                 <hr />
         </li>
+        <li>
+            <h4>Create patch files for n number of commits</h4>
+            <p>
+                Need to merge code on unrelated branches? Or if your branches are so far removed from each other that you need to slowly and carefully apply changes to catch up, rather than a full blown merge or rebase? Patch files can be your friend!
+            </p>
+            <p>
+                <blockquote class="blockquote"><code>git format-patch -x</code> where x represents the number of commits back from HEAD.</blockquote>
+            </p>
+            <p>Taken from here: <a href="https://www.ivankristianto.com/create-patch-files-from-multiple-commits-in-git/">Create Patch Files From Multiple Commits In Git</a></p>
+            <hr />
+    </li>
         </ul>
 
         <p>&nbsp;</p>
@@ -272,9 +283,28 @@
                     <hr />
             </li>
         </ul>
+
+        <p>&nbsp;</p>
+        <h3>IPC (Inter process communication)</h3>
+        <p>
+            &nbsp;
+        </p>
+        <ul>
+            <li>
+                    <h4>.Net WCF Named Pipes</h4>
+                    <p>
+                        Pipes are widely used but seem to me to be not so well understood. WCF hides some complexity but also adds some of its own abstractions that can be hard to remember.
+                    </p>
+                    <p>
+                        <blockquote class="blockquote"><code></code></blockquote>
+                    </p>
+                    <p>Process Explorer from SysInternals can inspect the named pipes owned by any process.<br>Chrome allows inspection of pipes by putting <code>file://./pipe/</code> in the address bar.<br>For a great article on how WCF names pipes under the covers: <a href="https://rodneyviana.com/named-pipes-in-wcf-are-named-but-not-by-you-and-how-to-find-the-actual-windows-object-name/">Named Pipes in WCF are named, but not by you! (Blog post)</a></a></p>
+                    <hr />
+            </li>
+        </ul>
     </div>
 </div>
-</driv>
+</div>
 
 <hr />
             <footer>
